@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.container .first__column {
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-image: url(images/celular-desktop.png);
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .first__column img {
+  width: 100%;
+}
+
+.container .second__column {
+  width: 100%;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.container .second__column .logo {
+  max-width: 54px;
+  margin-bottom: 80px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.container .second__column .logo:active {
+  transform: scale(1.1);
+}
+
+.container .second__column .messages .message__anonymous {
+  font-size: 14px;
+  color: #a1a1a1;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.container .second__column .messages h2 {
+  margin-top: 30px;
+  font-size: 42px;
+  color: #6603c9;
+  max-width: 850px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.container .second__column .messages p {
+  margin-top: 30px;
+  font-size: 16px;
+  max-width: 850px;
+  color: #a1a1a1;
+  margin-bottom: 30px;
+}
+
+.container .second__column .messages .download {
+  font-size: 16px;
+  font-weight: 600;
+  color: #242424;
+  margin-bottom: 30px;
+}
+
+.container .second__column .images__card img {
+  margin-top: 35px;
+  max-width: 150px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.container .second__column  .images__card :active {
+  transform: scale(1.1);
+}
+
+.container .second__column .images__card ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.container .second__column .images__card ul .social__medias {
+  display: flex;
+}
+
+.container .second__column .images__card ul li {
+  font-size: 12px;
+  margin-top: 30px;
+}
+
+.container .second__column .images__card ul li a {
+  text-decoration: none;
+  margin: 15px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
